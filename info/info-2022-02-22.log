@@ -1,0 +1,367 @@
+[2022-02-22 19:07:51] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 20992 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:07:51] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:07:52] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:07:52] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:07:52] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:07:52] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:07:53] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:07:53] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:07:53] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:07:53] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:07:53] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:07:53] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.736 seconds (JVM running for 3.852)
+[2022-02-22 19:08:04] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 19:08:29] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 19:08:29] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 19:09:14] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 19:09:14] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 19:12:55] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 19612 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:12:55] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:12:56] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:12:56] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:12:56] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:12:56] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:12:57] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:12:57] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:12:57] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:12:57] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:12:57] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:12:57] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.817 seconds (JVM running for 3.937)
+[2022-02-22 19:13:03] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 19:14:46] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 19:14:49] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 11576 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:14:49] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:14:50] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:14:50] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:14:50] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:14:50] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:14:51] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:14:51] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:14:51] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:14:51] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:14:51] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:14:51] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.63 seconds (JVM running for 3.718)
+[2022-02-22 19:14:55] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 19:15:48] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 19:15:52] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 23784 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:15:52] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:15:54] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:15:54] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:15:54] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:15:54] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:15:54] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:15:54] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:15:54] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:15:54] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:15:54] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:15:55] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.687 seconds (JVM running for 3.784)
+[2022-02-22 19:15:57] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 19:15:57] -- [INFO ]: [com.lyd.controller.FileController] -- classpath:novels
+[2022-02-22 19:16:08] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 19:16:11] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 25332 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:16:11] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:16:13] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:16:13] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:16:13] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:16:13] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:16:13] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:16:14] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:16:14] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:16:14] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:16:14] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:16:14] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.743 seconds (JVM running for 3.932)
+[2022-02-22 19:16:23] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 19:16:23] -- [INFO ]: [com.lyd.controller.FileController] -- novels
+[2022-02-22 19:16:27] -- [INFO ]: [com.lyd.controller.FileController] -- novels
+[2022-02-22 19:16:38] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 19:16:41] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 11736 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:16:41] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:16:42] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:16:42] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:16:42] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:16:42] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:16:43] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:16:43] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:16:43] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:16:43] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:16:43] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:16:43] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.645 seconds (JVM running for 3.716)
+[2022-02-22 19:16:45] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 19:16:45] -- [INFO ]: [com.lyd.controller.FileController] -- ../novels
+[2022-02-22 19:16:57] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 19:17:00] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 25872 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:17:00] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:17:01] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:17:01] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:17:01] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:17:01] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:17:02] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:17:02] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:17:02] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:17:02] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:17:02] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:17:02] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.659 seconds (JVM running for 3.761)
+[2022-02-22 19:17:06] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 19:17:06] -- [INFO ]: [com.lyd.controller.FileController] -- D:\ProjectResource\file
+[2022-02-22 19:17:06] -- [INFO ]: [com.lyd.controller.FileController] -- 文件三国演义下载成功
+[2022-02-22 19:28:29] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 19:28:34] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 25828 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:28:34] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:28:36] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:28:36] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:28:36] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:28:36] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:28:36] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:28:36] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:28:36] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:28:36] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:28:36] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:28:36] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.889 seconds (JVM running for 3.99)
+[2022-02-22 20:52:46] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 20:56:04] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 20:56:04] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 21:21:48] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:21:52] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:21:54] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:21:57] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:23:16] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:23:48] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:23:51] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:23:53] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:24:39] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:25:07] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:25:45] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 21:28:29] -- [INFO ]: [com.lyd.controller.NovelController] -- 添加收藏成功
+[2022-02-22 21:29:30] -- [INFO ]: [com.lyd.controller.NovelController] -- 添加收藏成功
+[2022-02-22 21:50:41] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 21:50:41] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 21:50:46] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 13888 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 21:50:46] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 21:50:48] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 21:50:48] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 21:50:48] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 21:50:48] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 21:50:48] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 21:50:49] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 21:50:49] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 21:50:49] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 21:50:49] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 21:50:49] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 3.097 seconds (JVM running for 4.289)
+[2022-02-22 21:51:07] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 22:13:59] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 22:13:59] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:14:21] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:17:30] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询 玄幻类 书籍成功
+[2022-02-22 22:17:44] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:18:10] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:18:20] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:18:33] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:18:35] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:20:42] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 22:20:42] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 22:20:46] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 24276 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 22:20:46] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 22:20:48] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:20:48] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 22:20:48] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 22:20:48] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 22:20:49] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 22:20:49] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:20:49] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 22:20:49] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 22:20:49] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 22:20:49] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 22:20:49] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 3.179 seconds (JVM running for 4.358)
+[2022-02-22 22:20:52] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 22:20:52] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:21:03] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:21:07] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:21:09] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:21:12] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:21:23] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:21:29] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:21:42] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:22:19] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:22:20] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:22:25] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:22:43] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:22:46] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 22:22:46] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 22:22:51] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 21212 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 22:22:51] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 22:22:52] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:22:52] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 22:22:52] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 22:22:53] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 22:22:53] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 22:22:53] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:22:53] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 22:22:53] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 22:22:53] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 22:22:53] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 3.001 seconds (JVM running for 4.179)
+[2022-02-22 22:22:54] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 22:22:54] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 22:22:54] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:23:07] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:23:10] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:23:34] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:23:51] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:23:53] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:25:47] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询推荐书目成功
+[2022-02-22 22:26:27] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:27:10] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:31:29] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 22:31:29] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 22:31:34] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 21284 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 22:31:34] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 22:31:36] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:31:36] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 22:31:36] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 22:31:36] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 22:31:37] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 22:31:37] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:31:37] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 22:31:37] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 22:31:37] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 22:31:37] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 3.161 seconds (JVM running for 4.687)
+[2022-02-22 22:31:52] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 22:32:10] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 22:32:10] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询 玄幻类 书籍成功
+[2022-02-22 22:32:36] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询 都市类 书籍成功
+[2022-02-22 22:33:03] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 22:33:03] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 22:33:08] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 18940 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 22:33:08] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 22:33:10] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:33:10] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 22:33:10] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 22:33:10] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 22:33:10] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 22:33:10] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:33:10] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 22:33:10] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 22:33:10] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 22:33:10] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.955 seconds (JVM running for 4.125)
+[2022-02-22 22:33:16] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 22:33:16] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 22:33:16] -- [INFO ]: [com.lyd.controller.NovelController] -- 查询 都市类 书籍成功
+[2022-02-22 22:41:17] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:41:36] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:48:29] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:50:39] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:50:46] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:50:50] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:50:52] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:50:58] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:51:01] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:51:11] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 22:52:39] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 22:52:39] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 22:52:43] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 28500 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 22:52:43] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 22:52:45] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:52:45] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 22:52:45] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 22:52:45] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 22:52:46] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 22:52:46] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:52:46] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 22:52:46] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 22:52:46] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 22:52:46] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 22:52:46] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.996 seconds (JVM running for 4.167)
+[2022-02-22 22:54:09] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 22:54:13] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 22336 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 22:54:14] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 22:54:15] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:54:15] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 22:54:15] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 22:54:15] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 22:54:15] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 22:54:16] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 22:54:16] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 22:54:16] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 22:54:16] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 22:54:16] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.739 seconds (JVM running for 3.851)
+[2022-02-22 22:54:21] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 22:57:22] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 22:57:22] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:00:16] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:00:43] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:02:24] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:05:49] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 23:05:49] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 23:06:27] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 26276 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 23:06:27] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 23:06:29] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 23:06:29] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 23:06:29] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 23:06:29] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 23:06:29] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 23:06:29] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 23:06:29] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 23:06:29] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 23:06:29] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 23:06:29] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.723 seconds (JVM running for 3.822)
+[2022-02-22 23:06:41] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 23:06:46] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 26636 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 23:06:46] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 23:06:48] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 23:06:48] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 23:06:48] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 23:06:48] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 23:06:48] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 23:06:48] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 23:06:48] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 23:06:48] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 23:06:48] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 23:06:48] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.682 seconds (JVM running for 3.779)
+[2022-02-22 23:06:52] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 23:07:58] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-0} closing ...
+[2022-02-22 23:08:02] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 20128 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 23:08:02] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 23:08:04] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 23:08:04] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 23:08:04] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 23:08:04] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 23:08:04] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 23:08:04] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 23:08:04] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 23:08:04] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 23:08:04] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 23:08:04] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.664 seconds (JVM running for 3.782)
+[2022-02-22 23:08:18] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 23:08:34] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 23:08:34] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:08:57] -- [INFO ]: [com.lyd.controller.NovelController] -- 模糊查询 "三" 成功
+[2022-02-22 23:09:36] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:11:36] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closing ...
+[2022-02-22 23:11:36] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} closed
+[2022-02-22 23:11:41] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 27424 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 23:11:41] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 23:11:43] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 23:11:43] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 23:11:43] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 23:11:43] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 23:11:43] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 23:11:43] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 23:11:43] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 23:11:43] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 23:11:43] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 23:11:43] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 23:11:43] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.742 seconds (JVM running for 3.893)
+[2022-02-22 23:11:44] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 23:11:44] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:12:18] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:13:11] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:13:21] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:13:26] -- [INFO ]: [com.lyd.controller.NovelController] -- 模糊查询 "三" 成功
+[2022-02-22 23:13:43] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:13:59] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:14:14] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:15:48] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:16:31] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:17:27] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:18:47] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:19:48] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功
+[2022-02-22 23:25:13] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功

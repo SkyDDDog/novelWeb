@@ -1,0 +1,15 @@
+[2022-02-22 19:07:51] -- [INFO ]: [com.lyd.NovelWebApplication] -- Starting NovelWebApplication using Java 1.8.0_301 on Sky-Dog with PID 20992 (D:\Code\project\Java\NovelWeb\target\classes started by 天狗 in D:\Code\project\Java\novelWeb)
+[2022-02-22 19:07:51] -- [INFO ]: [com.lyd.NovelWebApplication] -- No active profile set, falling back to default profiles: default
+[2022-02-22 19:07:52] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:07:52] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2022-02-22 19:07:52] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.55]
+[2022-02-22 19:07:52] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2022-02-22 19:07:53] -- [INFO ]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-02-22 19:07:53] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-8080"]
+[2022-02-22 19:07:53] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Context refreshed
+[2022-02-22 19:07:53] -- [INFO ]: [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] -- Found 1 custom documentation plugin(s)
+[2022-02-22 19:07:53] -- [INFO ]: [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] -- Scanning for api listing references
+[2022-02-22 19:07:53] -- [INFO ]: [com.lyd.NovelWebApplication] -- Started NovelWebApplication in 2.736 seconds (JVM running for 3.852)
+[2022-02-22 19:08:04] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-02-22 19:08:29] -- [INFO ]: [com.alibaba.druid.pool.DruidDataSource] -- {dataSource-1} inited
+[2022-02-22 19:08:29] -- [INFO ]: [com.lyd.controller.NovelController] -- 按排名查询成功

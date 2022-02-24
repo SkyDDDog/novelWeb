@@ -1,0 +1,861 @@
+[2022-02-22 19:07:51] -- [DEBUG]: [com.lyd.NovelWebApplication] -- Running with Spring Boot v2.5.7, Spring v5.3.13
+[2022-02-22 19:07:51] -- [DEBUG]: [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration] -- Searching for mappers annotated with @Mapper
+[2022-02-22 19:07:51] -- [DEBUG]: [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration] -- Using auto-configuration base package 'com.lyd'
+[2022-02-22 19:07:51] -- [DEBUG]: [org.apache.ibatis.logging.LogFactory] -- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2022-02-22 19:07:51] -- [DEBUG]: [org.mybatis.spring.mapper.ClassPathMapperScanner] -- Identified candidate component class: file [D:\Code\project\Java\NovelWeb\target\classes\com\lyd\mapper\NovelMapper.class]
+[2022-02-22 19:07:51] -- [DEBUG]: [org.mybatis.spring.mapper.ClassPathMapperScanner] -- Identified candidate component class: file [D:\Code\project\Java\NovelWeb\target\classes\com\lyd\mapper\UserMapper.class]
+[2022-02-22 19:07:51] -- [DEBUG]: [org.mybatis.spring.mapper.ClassPathMapperScanner] -- Creating MapperFactoryBean with name 'novelMapper' and 'com.lyd.mapper.NovelMapper' mapperInterface
+[2022-02-22 19:07:51] -- [DEBUG]: [org.mybatis.spring.mapper.ClassPathMapperScanner] -- Creating MapperFactoryBean with name 'userMapper' and 'com.lyd.mapper.UserMapper' mapperInterface
+[2022-02-22 19:07:52] -- [DEBUG]: [org.mybatis.spring.SqlSessionFactoryBean] -- Parsed mapper file: 'file [D:\Code\project\Java\NovelWeb\target\classes\mapper\NovelMapper.xml]'
+[2022-02-22 19:07:52] -- [DEBUG]: [org.mybatis.spring.SqlSessionFactoryBean] -- Parsed mapper file: 'file [D:\Code\project\Java\NovelWeb\target\classes\mapper\UserMapper.xml]'
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.spring.web.ShiroFilterFactoryBean] -- Found filter chain candidate filter 'corsFilter'
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.spring.web.ShiroFilterFactoryBean] -- Creating Shiro Filter instance.
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Creating chain [/user/login] with global filters [invalidRequest] and from String definition [anon]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Attempting to apply path [/user/login] to filter [invalidRequest] with config [null]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Attempting to apply path [/user/login] to filter [anon] with config [null]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Creating chain [/user/register] with global filters [invalidRequest] and from String definition [anon]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Attempting to apply path [/user/register] to filter [invalidRequest] with config [null]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Attempting to apply path [/user/register] to filter [anon] with config [null]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Creating chain [/user/*] with global filters [invalidRequest] and from String definition [authc]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Attempting to apply path [/user/*] to filter [invalidRequest] with config [null]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Attempting to apply path [/user/*] to filter [authc] with config [null]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.web.filter.mgt.DefaultFilterChainManager] -- Attempting to apply path [/**] to filter [invalidRequest] with config [null]
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.spring.web.ShiroFilterFactoryBean] -- Found filter chain candidate filter 'requestContextFilter'
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.spring.web.ShiroFilterFactoryBean] -- Found filter chain candidate filter 'formContentFilter'
+[2022-02-22 19:07:52] -- [DEBUG]: [org.apache.shiro.spring.web.ShiroFilterFactoryBean] -- Found filter chain candidate filter 'characterEncodingFilter'
+[2022-02-22 19:07:53] -- [DEBUG]: [_org.springframework.web.servlet.HandlerMapping.Mappings] -- 
+	c.l.c.FileController:
+	{POST [/file/upload]}: uploading(MultipartFile)
+	{ [/file/download]}: download(String,HttpServletResponse)
+[2022-02-22 19:07:53] -- [DEBUG]: [_org.springframework.web.servlet.HandlerMapping.Mappings] -- 
+	c.l.c.NovelController:
+	{ [/novel/search]}: search(String)
+	{ [/novel/rank]}: rank()
+	{ [/novel/addNovel]}: addNovel(Novel)
+	{ [/novel/collection]}: novelCollection(String)
+	{ [/novel/addCollection]}: addCollection(UserCollection)
+	{ [/novel/recommend]}: recommend()
+	{ [/novel/pass]}: isPass(String)
+	{ [/novel/selectByPage]}: manageMember(int,int)
+	{ [/novel/kind]}: kind(String)
+[2022-02-22 19:07:53] -- [DEBUG]: [_org.springframework.web.servlet.HandlerMapping.Mappings] -- 
+	c.l.c.UserController:
+	{POST [/user/register]}: register(String,String,String)
+	{ [/user/noauth]}: unauthorrized()
+	{ [/user/logout]}: logout(HttpServletResponse)
+	{ [/user/login]}: login(String,String)
+[2022-02-22 19:07:53] -- [DEBUG]: [_org.springframework.web.servlet.HandlerMapping.Mappings] -- 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources]}: swaggerResources()
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+[2022-02-22 19:07:53] -- [DEBUG]: [_org.springframework.web.servlet.HandlerMapping.Mappings] -- 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- initialising the handler methods
+[2022-02-22 19:07:53] -- [DEBUG]: [_org.springframework.web.servlet.HandlerMapping.Mappings] -- 'beanNameHandlerMapping' {}
+[2022-02-22 19:07:53] -- [DEBUG]: [_org.springframework.web.servlet.HandlerMapping.Mappings] -- 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]], /swagger-ui/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/springfox-swagger-ui/]]}
+[2022-02-22 19:07:53] -- [DEBUG]: [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration] -- Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Total number of request handlers 20
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/file/download], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/file/download], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/file/upload], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/file/upload], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/addCollection], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/addCollection], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/addNovel], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/addNovel], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/collection], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/collection], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/kind], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/kind], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/pass], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/pass], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/rank], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/rank], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/recommend], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/recommend], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/search], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/search], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/novel/selectByPage], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/novel/selectByPage], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/user/login], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/user/login], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/user/logout], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/user/logout], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/user/noauth], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/user/noauth], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Adding key: [/user/register], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/user/register], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner] -- Combined number of request handlers 20
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type V
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |download|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |download|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |download|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Skipping model of type V as its either a container type, map, enum or base type, or its already been handled
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for void
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method download
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/lang/String;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |uploading|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |uploading|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |uploading|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Skipping model of type Ljava/lang/String; as its either a container type, map, enum or base type, or its already been handled
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.lang.String
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Marking base type Ljava/lang/String; as seen
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method uploading
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method uploading
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/Map<Ljava/lang/Integer;Ljava/lang/String;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |addCollection|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding input parameter of type Lcom/lyd/pojo/UserCollection;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |addCollection|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |addCollection|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property username
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setUsername
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'username' renamed to 'username'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property username to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setUsername
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setUsername
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setUsername
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setUsername
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property novelname
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setNovelname
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'novelname' renamed to 'novelname'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property novelname to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setNovelname
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setNovelname
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setNovelname
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setNovelname
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Inferred 2 properties. Properties found novelname, username
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Generated parameter model id: 用户收藏夹, name: 用户收藏夹, schema: {} models
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Adding a new model with key 用户收藏夹
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Skipping model of type Ljava/util/Map<Ljava/lang/Integer;Ljava/lang/String;>; as its either a container type, map, enum or base type, or its already been handled
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.Map<java.lang.Integer,java.lang.String>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Adding type for parameter Ljava/lang/Integer;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Recursively resolving dependencies for parameter Ljava/lang/Integer;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Marking base type Ljava/lang/Integer; as seen
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Adding type for parameter Ljava/lang/String;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Recursively resolving dependencies for parameter Ljava/lang/String;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Marking base type Ljava/lang/String; as seen
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Adding type for parameter Ljava/lang/Integer;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Recursively resolving dependencies for parameter Ljava/lang/Integer;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Marking base type Ljava/lang/Integer; as seen
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Adding type for parameter Ljava/lang/String;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Recursively resolving dependencies for parameter Ljava/lang/String;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Marking base type Ljava/lang/String; as seen
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type I
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |addNovel|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding input parameter of type Lcom/lyd/pojo/Novel;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |addNovel|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |addNovel|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Skipping model of type I as its either a container type, map, enum or base type, or its already been handled
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Marking base type I as seen
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property name
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'name' renamed to 'name'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property name to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property photo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'photo' renamed to 'photo'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property photo to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property author
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'author' renamed to 'author'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property author to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property info
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'info' renamed to 'info'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property info to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'rank' renamed to 'rank'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property rank to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'recommend' renamed to 'recommend'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property recommend to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'kind' renamed to 'kind'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property kind to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property pass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'pass' renamed to 'pass'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property pass to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped setter for member setPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Inferred 8 properties. Properties found author, info, kind, name, pass, photo, rank, recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Generated parameter model id: Novel, name: Novel, schema: {} models
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Adding a new model with key Novel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method addNovel
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type I
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |isPass|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |isPass|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |isPass|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:int
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/List<Lcom/lyd/pojo/Novel;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |kind|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |kind|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |kind|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Skipping model of type Ljava/util/List<Lcom/lyd/pojo/Novel;>; as its either a container type, map, enum or base type, or its already been handled
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.List<com.lyd.pojo.Novel>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Adding type for parameter Lcom/lyd/pojo/Novel;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Recursively resolving dependencies for parameter Lcom/lyd/pojo/Novel;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property name
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'name' renamed to 'name'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property name to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getName
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property photo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'photo' renamed to 'photo'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property photo to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getPhoto
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property author
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'author' renamed to 'author'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property author to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getAuthor
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property info
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'info' renamed to 'info'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property info to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getInfo
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'rank' renamed to 'rank'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property rank to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getRank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'recommend' renamed to 'recommend'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property recommend to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isRecommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'kind' renamed to 'kind'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property kind to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member getKind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Reading property pass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy] -- Name 'pass' renamed to 'pass'
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.OptimizedModelPropertiesProvider] -- Adding property pass to model
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.property.bean.BeanModelProperty] -- Evaluating unwrapped getter for member isPass
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Inferred 8 properties. Properties found author, info, kind, name, pass, photo, rank, recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method kind
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/List<Lcom/lyd/pojo/Novel;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |manageMember|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |manageMember|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |manageMember|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.List<com.lyd.pojo.Novel>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Inferred 8 properties. Properties found author, info, kind, name, pass, photo, rank, recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method manageMember
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method manageMember
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method manageMember
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method manageMember
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method manageMember
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method manageMember
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method manageMember
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method manageMember
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/List<Lcom/lyd/pojo/Novel;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |novelCollection|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |novelCollection|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |novelCollection|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.List<com.lyd.pojo.Novel>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Inferred 8 properties. Properties found author, info, kind, name, pass, photo, rank, recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method novelCollection
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/List<Lcom/lyd/pojo/Novel;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |rank|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |rank|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |rank|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.List<com.lyd.pojo.Novel>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Inferred 8 properties. Properties found author, info, kind, name, pass, photo, rank, recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method rank
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/List<Lcom/lyd/pojo/Novel;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |recommend|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |recommend|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |recommend|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.List<com.lyd.pojo.Novel>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Inferred 8 properties. Properties found author, info, kind, name, pass, photo, rank, recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/List<Lcom/lyd/pojo/Novel;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |search|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding input parameter of type Ljava/lang/String;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |search|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |search|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.List<com.lyd.pojo.Novel>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Inferred 8 properties. Properties found author, info, kind, name, pass, photo, rank, recommend
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Skipping model of type Ljava/lang/String; as its either a container type, map, enum or base type, or its already been handled
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.lang.String
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelDependencyProvider] -- Marking base type Ljava/lang/String; as seen
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:List
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method search
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/Map<Ljava/lang/Integer;Ljava/lang/String;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |login|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |login|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |login|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Adding input parameter of type Ljava/lang/Void;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Adding input parameter of type Ljava/lang/Void;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Adding input parameter of type Ljava/lang/Void;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.Map<java.lang.Integer,java.lang.String>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.schema.DefaultModelProvider] -- Skipping model of type Ljava/lang/Void; as its either a container type, map, enum or base type, or its already been handled
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.lang.Void
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method login
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type V
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |logout|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |logout|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |logout|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for void
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: null
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method logout
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/util/Map<Ljava/lang/Integer;Ljava/lang/String;>;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |register|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |register|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |register|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Adding input parameter of type Ljava/lang/Void;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Adding input parameter of type Ljava/lang/Void;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Adding input parameter of type Ljava/lang/Void;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Adding input parameter of type Ljava/lang/Void;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.util.Map<java.lang.Integer,java.lang.String>
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.lang.Void
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method register
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:Map«int,string»
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method register
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Adding return parameter of type Ljava/lang/String;
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Reading parameters models for handlerMethod |unauthorrized|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationModelsProvider] -- Finished reading parameters models for handlerMethod |unauthorrized|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider] -- Reading parameters models for handlerMethod |unauthorrized|
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.scanners.ApiModelReader] -- Did not find any parameter models for java.lang.String
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.spring.web.readers.operation.OperationResponseClassReader] -- Setting spring response class to: string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.VendorExtensionsReader] -- Extension count 1 for method unauthorrized
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader] -- Setting response class to:string
+[2022-02-22 19:07:53] -- [DEBUG]: [springfox.documentation.swagger.readers.operation.OperationAuthReader] -- Authorization count 0 for method unauthorrized
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /swagger-ui.html
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/springfox.css
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui.css
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui-bundle.js
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/springfox.js
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /swagger-resources/configuration/ui
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/favicon-32x32.png
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /swagger-resources/configuration/security
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /swagger-resources
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /v2/api-docs
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- Mapped to springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /error
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /csrf
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /error
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2
+[2022-02-22 19:08:04] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2
+[2022-02-22 19:08:18] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2
+[2022-02-22 19:08:21] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-regular.woff2
+[2022-02-22 19:08:28] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /novel/rank
+[2022-02-22 19:08:28] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:28] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ebaa1c8] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryAllRank] -- ==>  Preparing: select `rank` from novel where not `rank` = 999
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryAllRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryAllRank] -- <==      Total: 10
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ebaa1c8]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d9462c] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 1 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d9462c]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a54041d] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 2 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a54041d]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73618e98] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 3 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73618e98]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f57625c] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 5 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f57625c]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1822cf2f] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 4 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1822cf2f]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11540ce8] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 8 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11540ce8]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf91d59] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 7 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf91d59]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c530d87] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 9 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c530d87]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58aa4ea0] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 10 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58aa4ea0]
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Creating a new SqlSession
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d872ccd] was not registered for synchronization because synchronization is not active
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.transaction.SpringManagedTransaction] -- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5d0bf8da] will not be managed by Spring
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==>  Preparing: select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = 6 and pass = 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- ==> Parameters: 
+[2022-02-22 19:08:29] -- [DEBUG]: [com.lyd.mapper.NovelMapper.queryNovelByRank] -- <==      Total: 1
+[2022-02-22 19:08:29] -- [DEBUG]: [com.alibaba.druid.pool.PreparedStatementPool] -- stmt enter cache
+[2022-02-22 19:08:29] -- [DEBUG]: [org.mybatis.spring.SqlSessionUtils] -- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d872ccd]
+[2022-02-22 19:08:29] -- [DEBUG]: [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] -- looking up handler for path: /webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-600.woff2

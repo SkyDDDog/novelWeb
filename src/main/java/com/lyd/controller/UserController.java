@@ -1,0 +1,122 @@
+package com.lyd.controller;
+
+import com.lyd.pojo.User;
+import com.lyd.service.UserService;
+import com.lyd.utills.ResultCommon;
+import io.swagger.annotations.*;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+@RestController()
+@Api(tags = "用户数据接口")
+@RequestMapping("/user")
+@Slf4j
+public class UserController {
+    @Autowired
+    UserService userService;
+
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @ApiOperation(value = "登录接口",notes = "传入用户名和密码,返回Code和描述")
+    @ApiResponses({
+            @ApiResponse(code = 701,message = "登陆成功"),
+            @ApiResponse(code = 702,message = "用户名错误"),
+            @ApiResponse(code = 703,message = "密码错误")
+    })
+    public Map<Integer, String> login(@RequestParam("用户名") String username, @RequestParam("密码") String password, HttpServletResponse response) throws IOException {
+        Map<Integer, String> map = new HashMap<>();
+
+        System.out.println(username);
+        System.out.println(password);
+
+        //获取当前用户
+        Subject subject = SecurityUtils.getSubject();
+        //封装用户的登录数据
+        UsernamePasswordToken token = new UsernamePasswordToken(username, password);
+
+        try {
+            subject.login(token);
+            map.put(ResultCommon.LOGIN_SUCCESS.getStateCode(),ResultCommon.LOGIN_SUCCESS.getStateDec());
+            response.setStatus(ResultCommon.LOGIN_SUCCESS.getStateCode());
+//            response.getWriter().append(ResultCommon.LOGIN_SUCCESS.getStateDec());
+            log.info(username + "登录成功,密码为:" + password);
+        } catch (UnknownAccountException e) {
+            map.put(ResultCommon.UNKNOW_ACCOUNT.getStateCode(), ResultCommon.UNKNOW_ACCOUNT.getStateDec());
+            response.setStatus(ResultCommon.UNKNOW_ACCOUNT.getStateCode());
+//            response.getWriter().append(ResultCommon.UNKNOW_ACCOUNT.getStateDec());
+            log.error(username + "用户名错误");
+        }catch (IncorrectCredentialsException e){
+            map.put(ResultCommon.INCORRECT_CREDENTIALS.getStateCode(), ResultCommon.INCORRECT_CREDENTIALS.getStateDec());
+            response.setStatus(ResultCommon.INCORRECT_CREDENTIALS.getStateCode());
+//            response.getWriter().append(ResultCommon.INCORRECT_CREDENTIALS.getStateDec());
+            log.error(username + "密码错误,输入值为" + password);
+        }
+        return map;
+    }
+
+    @RequestMapping(value = "/register",method = RequestMethod.POST)
+    @ApiOperation(value = "注册接口")
+    @ApiResponses({
+            @ApiResponse(code = 601,message = "成功注册为管理员"),
+            @ApiResponse(code = 602,message = "成功注册为普通用户"),
+            @ApiResponse(code = 603,message = "用户名冲突"),
+            @ApiResponse(code = 604,message = "注册失败")
+    })
+    public Map<Integer, String> register(@RequestParam("用户名")String username, @RequestParam("密码")String password,@RequestParam("昵称") String nname, HttpServletResponse response) {
+        User user = new User();
+        Map<Integer, String> map = new HashMap<>();
+        List<User> users = userService.queryAllUser();
+        for (User u: users) {
+            if(username.equals(u.getName())){
+                map.put(ResultCommon.REG_SAMEUSERNAME.getStateCode(),ResultCommon.REG_SAMEUSERNAME.getStateDec());
+                response.setStatus(ResultCommon.REG_SAMEUSERNAME.getStateCode());
+                log.error("注册失败:用户名" + username + "冲突/重复");
+                return map;
+            }
+        }
+        user.setName(username);
+        user.setPwd(password);
+        user.setNname(nname);
+        int i = userService.addUser(user);
+        if (i > 0) {
+            map.put(ResultCommon.REG_USER.getStateCode(),ResultCommon.REG_USER.getStateDec());
+            response.setStatus(ResultCommon.REG_USER.getStateCode());
+            log.info(username + "成功注册为用户,密码为:" + password);
+        } else {
+            map.put(ResultCommon.ADD_FAILURE.getStateCode(),ResultCommon.ADD_FAILURE.getStateDec());
+            response.setStatus(ResultCommon.ADD_FAILURE.getStateCode());
+            log.error(username + "注册失败");
+        }
+        return map;
+    }
+
+    @RequestMapping(value = "/logout",method = RequestMethod.GET)
+    @ApiOperation(value = "登出接口")
+    @ApiResponse(code = 302,message = "已登出")
+    public void logout(HttpServletResponse response) {
+        Subject lvSubject=SecurityUtils.getSubject();
+        lvSubject.logout();
+        response.setStatus(302);
+        log.info("已登出");
+    }
+
+    @RequestMapping(value = "/noauth",method = RequestMethod.GET)
+    @ApiOperation(value = "无权限自动跳转到此接口")
+    public String unauthorrized(){
+        log.info("返回未授权页面");
+        return "未经授权无法访问此页面";
+    }
+
+
+}

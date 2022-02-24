@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lyd.mapper.NovelMapper">
+
+    <select id="queryNovelByRank" parameterType="String" resultType="Novel">
+        select `name`,`photo`,`author`,`info`,`kind`,`rank` from novel where `rank` = ${rank} and pass = 1
+    </select>
+    <select id="queryAllRank" resultType="int">
+        select `rank` from novel where not `rank` = 999
+    </select>
+
+    <select id="queryAllNovels" resultType="Novel">
+        select `name`,`photo`,`author`,`info`,`kind` from novel where pass = 1
+    </select>
+
+    <select id="queryNovelRecommended" resultType="Novel">
+        select `name`,`photo`,`author`,`info`,`kind` from novel where `recommend` = 1 and pass = 1
+    </select>
+
+    <select id="queryNovelByKind" parameterType="String" resultType="Novel">
+        select `name`,`photo`,`author`,`info`,`kind` from novel where `kind` = #{kind} and pass = 1
+    </select>
+
+    <select id="queryNovelCollection" parameterType="String" resultType="Novel">
+        select n.name,n.photo,n.author,n.info,n.kind
+        from novel n
+                 inner join collection c
+                            on n.name = c.novelname
+        where username = #{name} and pass = 1
+    </select>
+
+    <insert id="addColletion" parameterType="UserCollection">
+        insert into collection (`username`,`novelname`) values (#{username},#{novelname})
+    </insert>
+
+    <select id="search" parameterType="String" resultType="Novel">
+        select `name`,`photo`,`author`,`info`,`kind`
+        from novel where `name` like concat('%',${name},'%') and pass = 1
+    </select>
+    
+    <insert id="addNovel" parameterType="Novel">
+        insert into novel (name, photo, author, info, kind)
+        values (#{name},#{photo},#{author},#{info},#{kind});
+    </insert>
+
+    <update id="isPass">
+        update novel set pass = 1 where name = #{name}
+    </update>
+</mapper>
