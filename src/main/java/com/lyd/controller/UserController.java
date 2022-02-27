@@ -34,7 +34,7 @@ public class UserController {
             @ApiResponse(code = 702,message = "用户名错误"),
             @ApiResponse(code = 703,message = "密码错误")
     })
-    public Map<Integer, String> login(@RequestParam("用户名") String username, @RequestParam("密码") String password, HttpServletResponse response) throws IOException {
+    public Map<Integer, String> login(@RequestParam("username") String username, @RequestParam("password") String password, HttpServletResponse response) throws IOException {
         Map<Integer, String> map = new HashMap<>();
 
         System.out.println(username);
@@ -73,7 +73,7 @@ public class UserController {
             @ApiResponse(code = 603,message = "用户名冲突"),
             @ApiResponse(code = 604,message = "注册失败")
     })
-    public Map<Integer, String> register(@RequestParam("用户名")String username, @RequestParam("密码")String password,@RequestParam("昵称") String nname, HttpServletResponse response) {
+    public Map<Integer, String> register(@RequestParam("username")String username, @RequestParam("password")String password,@RequestParam("昵称") String nname, HttpServletResponse response) {
         User user = new User();
         Map<Integer, String> map = new HashMap<>();
         List<User> users = userService.queryAllUser();

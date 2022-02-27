@@ -28,11 +28,12 @@ public class ShiroConfig {
         Map<String,String> filterMap = new LinkedHashMap<>();
         filterMap.put("/user/login","anon");
         filterMap.put("/user/register","anon");
+        filterMap.put("/user/logout","anon");
         filterMap.put("/user/*","authc");
 
 
         //设置登录请求
-//        bean.setLoginUrl("/noauth");
+        bean.setLoginUrl("/user/noauth");
 
         bean.setFilterChainDefinitionMap(filterMap);
 

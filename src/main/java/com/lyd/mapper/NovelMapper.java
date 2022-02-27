@@ -31,5 +31,9 @@ public interface NovelMapper {
 
     public int isPass(String name);
 
+    //随便获取五十多条数据 (前端要求)
+    public List<Novel> getNovelName();
+
+    public List<Novel> getUnPass();
 
 }

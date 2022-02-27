@@ -7,8 +7,10 @@ import com.lyd.utills.ResultCommon;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
@@ -100,7 +102,7 @@ public class NovelController {
 
     @RequestMapping(value = "/collection",method = RequestMethod.GET)
     @ApiOperation(value = "查询用户收藏")
-    public List<Novel> novelCollection(@RequestParam("用户名") String username) {
+    public List<Novel> novelCollection(@RequestParam("username") String username) {
         List<Novel> novels = novelService.queryNovelCollection(username);
         log.info("查询 用户" + username + " 收藏成功");
         return novels;
@@ -108,7 +110,7 @@ public class NovelController {
 
     @RequestMapping(value = "/addCollection",method = RequestMethod.POST)
     @ApiOperation(value = "添加收藏",notes = "数据前端给，不做校验")
-    public Map<Integer, String> addCollection(@RequestParam("用户名")String username, @RequestParam("小说名")String novelName, HttpServletResponse response) {
+    public Map<Integer, String> addCollection(@RequestParam("username")String username, @RequestParam("novelname")String novelName, HttpServletResponse response) {
         UserCollection userCollection = new UserCollection();
         userCollection.setUsername(username);
         userCollection.setNovelname(novelName);
@@ -130,7 +132,7 @@ public class NovelController {
 
     @RequestMapping(value = "/addNovel",method = RequestMethod.POST)
     @ApiOperation(value = "上传小说")
-    public Map<Integer, String> addNovel(@RequestBody Novel novel, HttpServletResponse response) {
+    public Map<Integer, String> addNovel(@RequestBody Novel novel,@RequestParam("file") MultipartFile file, HttpServletResponse response) {
         Map<Integer, String> map = new HashMap<>();
         int i = novelService.addNovel(novel);
         if (i > 0) {
@@ -143,6 +145,7 @@ public class NovelController {
             response.setStatus(ResultCommon.ADDNOVEL_FAILURE.getStateCode());
             log.error("上传新小说信息 " + novel.toString() + " 失败");
         }
+        new FileController().uploading(file);
 
         return map;
     }
@@ -170,6 +173,18 @@ public class NovelController {
                                @RequestParam(defaultValue = "10") int pageSize){
         log.info("按页查询: 第" + pageNum + "页," + "该页含有" + pageSize + "条数据");
         return novelService.findAllUserByPageF(pageNum,pageSize);
+    }
+
+    @RequestMapping(value = "/getNovelName",method = RequestMethod.GET)
+    @ApiOperation(value = "随便给五十个左右小说名")
+    public List<Novel> getNovelName() {
+        return novelService.getNovelName();
+    }
+
+    @RequestMapping(value = "/getUnPass",method = RequestMethod.GET)
+    @ApiOperation(value = "获取未被审核的数据")
+    public List<Novel> getUnPass() {
+        return novelService.getUnPass();
     }
 
 

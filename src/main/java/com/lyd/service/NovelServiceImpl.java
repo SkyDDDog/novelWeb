@@ -82,6 +82,15 @@ public class NovelServiceImpl implements NovelService{
         List<Novel> lists = novelMapper.queryAllNovels();
         PageInfo<Novel> pageInfo = new PageInfo<Novel>(lists);
         return pageInfo;
+    }
 
+    @Override
+    public List<Novel> getNovelName() {
+        return novelMapper.getNovelName();
+    }
+
+    @Override
+    public List<Novel> getUnPass() {
+        return novelMapper.getUnPass();
     }
 }

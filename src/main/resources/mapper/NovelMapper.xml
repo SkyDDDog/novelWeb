@@ -49,4 +49,12 @@
     <update id="isPass">
         update novel set pass = 1 where name = #{name}
     </update>
+
+    <select id="getNovelName" resultType="Novel">
+        select name from novel where kind = "都市" or kind = "玄幻"
+    </select>
+    
+    <select id="getUnPass" resultType="Novel">
+        select `name`,`author`,`kind`,`pass` from novel where pass = 0
+    </select>
 </mapper>

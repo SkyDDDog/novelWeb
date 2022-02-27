@@ -31,4 +31,8 @@ public interface NovelService {
 
     PageInfo<Novel> findAllUserByPageS(int pageNum, int pageSize);
 
+    public List<Novel> getNovelName();
+
+    public List<Novel> getUnPass();
+
 }
