@@ -21,8 +21,8 @@ public class User {
     @ApiModelProperty(value = "用户密码")
     private String pwd;
     @ApiModelProperty(value = "昵称")
-    private String nname;
-//    @JsonIgnore
+    private String nname = null;
+    @JsonIgnore
     @ApiModelProperty(value = "用户权限组")
     private String perms = "user";
 }

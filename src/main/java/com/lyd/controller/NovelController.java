@@ -1,13 +1,13 @@
 package com.lyd.controller;
 
 import com.lyd.pojo.Novel;
+import com.lyd.pojo.User;
 import com.lyd.pojo.UserCollection;
 import com.lyd.service.NovelService;
 import com.lyd.utills.ResultCommon;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -28,6 +28,7 @@ public class NovelController {
 
     @RequestMapping(value = "/rank",method = RequestMethod.GET)
     @ApiOperation(value = "排行榜")
+    @CrossOrigin
     public List<Novel> rank(){
         List<Novel> novels = new ArrayList<>();
         int[] ranks = novelService.queryAllRank();
@@ -48,6 +49,7 @@ public class NovelController {
 
     @RequestMapping(value = "/kind/gd",method = RequestMethod.GET)
     @ApiOperation(value = "古典小说分类")
+    @CrossOrigin
     public List<Novel> gdkind() {
         String kind = "古典";
         List<Novel> novels = novelService.queryNovelByKind(kind);
@@ -57,6 +59,7 @@ public class NovelController {
 
     @RequestMapping(value = "/kind/xy",method = RequestMethod.GET)
     @ApiOperation(value = "悬疑小说分类")
+    @CrossOrigin
     public List<Novel> xykind() {
         String kind = "悬疑";
         List<Novel> novels = novelService.queryNovelByKind(kind);
@@ -66,6 +69,7 @@ public class NovelController {
 
     @RequestMapping(value = "/kind/xz",method = RequestMethod.GET)
     @ApiOperation(value = "修真小说分类")
+    @CrossOrigin
     public List<Novel> xzkind() {
         String kind = "修真";
         List<Novel> novels = novelService.queryNovelByKind(kind);
@@ -75,6 +79,7 @@ public class NovelController {
 
     @RequestMapping(value = "/kind/xh",method = RequestMethod.GET)
     @ApiOperation(value = "玄幻小说分类")
+    @CrossOrigin
     public List<Novel> xhkind() {
         String kind = "玄幻";
         List<Novel> novels = novelService.queryNovelByKind(kind);
@@ -84,6 +89,7 @@ public class NovelController {
 
     @RequestMapping(value = "/kind/ds",method = RequestMethod.GET)
     @ApiOperation(value = "都市小说分类")
+    @CrossOrigin
     public List<Novel> dskind() {
         String kind = "都市";
         List<Novel> novels = novelService.queryNovelByKind(kind);
@@ -93,6 +99,7 @@ public class NovelController {
 
     @RequestMapping(value = "/kind/yx",method = RequestMethod.GET)
     @ApiOperation(value = "游戏小说分类")
+    @CrossOrigin
     public List<Novel> yxkind() {
         String kind = "游戏";
         List<Novel> novels = novelService.queryNovelByKind(kind);
@@ -102,7 +109,8 @@ public class NovelController {
 
     @RequestMapping(value = "/collection",method = RequestMethod.GET)
     @ApiOperation(value = "查询用户收藏")
-    public List<Novel> novelCollection(@RequestParam("username") String username) {
+    @CrossOrigin
+    public List<Novel> novelCollection(@RequestParam String username) {
         List<Novel> novels = novelService.queryNovelCollection(username);
         log.info("查询 用户" + username + " 收藏成功");
         return novels;
@@ -110,6 +118,7 @@ public class NovelController {
 
     @RequestMapping(value = "/addCollection",method = RequestMethod.POST)
     @ApiOperation(value = "添加收藏",notes = "数据前端给，不做校验")
+    @CrossOrigin
     public Map<Integer, String> addCollection(@RequestParam("username")String username, @RequestParam("novelname")String novelName, HttpServletResponse response) {
         UserCollection userCollection = new UserCollection();
         userCollection.setUsername(username);
@@ -124,6 +133,7 @@ public class NovelController {
 
     @RequestMapping(value = "/search",method = RequestMethod.POST)
     @ApiOperation(value = "模糊查询",notes = "按小说名查询,简单的模糊查询，含有小说的字就行")
+    @CrossOrigin
     public List<Novel> search(@RequestBody String name){
         List<Novel> novels = novelService.search(name);
         log.info("模糊查询 " + name + " 成功");
@@ -132,6 +142,7 @@ public class NovelController {
 
     @RequestMapping(value = "/addNovel",method = RequestMethod.POST)
     @ApiOperation(value = "上传小说")
+    @CrossOrigin
     public Map<Integer, String> addNovel(@RequestBody Novel novel,@RequestParam("file") MultipartFile file, HttpServletResponse response) {
         Map<Integer, String> map = new HashMap<>();
         int i = novelService.addNovel(novel);
@@ -152,7 +163,8 @@ public class NovelController {
 
     @RequestMapping(value = "/pass",method = RequestMethod.POST)
     @ApiOperation(value = "小说审核")
-    public Map<Integer, String> pass(@RequestParam("小说名")String name,@RequestParam("是否通过审核(1为通过，0为不通过)")int isPass, HttpServletResponse response) {
+    @CrossOrigin
+    public Map<Integer, String> pass(@RequestParam("novelname")String name,@RequestParam("isPass")int isPass, HttpServletResponse response) {
         Map<Integer, String> map = new HashMap<>();
         if (isPass!=0) {
             novelService.isPass(name);
@@ -169,6 +181,7 @@ public class NovelController {
 
     @RequestMapping(value = "/selectByPage",method = RequestMethod.GET)
     @ApiOperation(value = "分页获取所有小说",notes = "传入页码号，和每页的个数")
+    @CrossOrigin
     public List<Novel> manageMember(@RequestParam(defaultValue = "1") int pageNum,
                                @RequestParam(defaultValue = "10") int pageSize){
         log.info("按页查询: 第" + pageNum + "页," + "该页含有" + pageSize + "条数据");
@@ -177,12 +190,14 @@ public class NovelController {
 
     @RequestMapping(value = "/getNovelName",method = RequestMethod.GET)
     @ApiOperation(value = "随便给五十个左右小说名")
+    @CrossOrigin
     public List<Novel> getNovelName() {
         return novelService.getNovelName();
     }
 
     @RequestMapping(value = "/getUnPass",method = RequestMethod.GET)
     @ApiOperation(value = "获取未被审核的数据")
+    @CrossOrigin
     public List<Novel> getUnPass() {
         return novelService.getUnPass();
     }
